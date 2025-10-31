@@ -58,11 +58,16 @@
       "required": false,
       "types": [
         {
-          "type": "_value",
+          "type": "pair",
           "named": true
         }
       ]
     }
+  },
+  {
+    "type": "number",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "object",
@@ -87,6 +92,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "identifier",
+            "named": true
+          },
           {
             "type": "string",
             "named": true
@@ -129,11 +138,31 @@
     "named": false
   },
   {
-    "type": ",",
+    "type": "'",
+    "named": false
+  },
+  {
+    "type": "+",
+    "named": false
+  },
+  {
+    "type": "-",
     "named": false
   },
   {
     "type": ":",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "Infinity",
+    "named": false
+  },
+  {
+    "type": "NaN",
     "named": false
   },
   {
@@ -146,7 +175,8 @@
   },
   {
     "type": "comment",
-    "named": true
+    "named": true,
+    "extra": true
   },
   {
     "type": "escape_sequence",
@@ -157,11 +187,11 @@
     "named": true
   },
   {
-    "type": "null",
+    "type": "identifier",
     "named": true
   },
   {
-    "type": "number",
+    "type": "null",
     "named": true
   },
   {

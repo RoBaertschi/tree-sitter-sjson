@@ -1,12 +1,12 @@
 {
   "grammars": [
     {
-      "name": "json",
-      "camelcase": "JSON",
-      "scope": "source.json",
+      "name": "sjson",
+      "camelcase": "SJSON",
+      "scope": "source.sjson",
       "path": ".",
       "file-types": [
-        "json"
+        "sjson"
       ],
       "highlights": "queries/highlights.scm"
     }

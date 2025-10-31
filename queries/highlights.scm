@@ -5,6 +5,8 @@
 
 (number) @number
 
+(identifier) @identifier
+
 [
   (null)
   (true)
